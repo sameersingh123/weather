@@ -37,7 +37,7 @@ app.get("*",(req,res)=>{
     })
 })
 
-app.listen(port,() =>{
+app.listen(process.env.PORT || port,() =>{
     console.log(`listening to the port at ${port}`)
 })
 
